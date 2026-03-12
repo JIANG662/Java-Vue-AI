@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+</head>
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_5014260_ov2mta56tsp.css">
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <div style="margin-right:5px " class="iconfont icon-zhusu_minsu"></div>
+                <div class="header-left-aside">
+                    <div style="font-weight: 800;font-size: 30px;color: green">一家民宿</div>
+                    <div>YIJIAMINSU</div>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="iconfont icon-shouye"></div>
+                <div style="color: green;margin-left: 5px">首页</div>
+            </div>
+        </div>
+        <div class="body-main">
+            <div class="main">
+                <div class="main-header">
+                    <div class="underline" style="margin: 35px 20px 15px 30px;color: #409eff;font-weight: 600" class="acc"><span>账号密码登录</span></div>
+
+                    <div style="margin: 35px 0 15px 10px;font-weight: 600" class="email">邮箱登录</div>
+
+                    <el-divider border-style="double" />
+                </div>
+                <div class="main-input">
+                    <input style="margin-bottom: 7px;width: 220px;height: 22px" placeholder="请输入登录账号" >
+                    <input style="margin-top: 7px;width: 220px;height: 22px" placeholder="请输入登录密码" >
+                </div>
+                <div class="main-log">
+                   <div class="login-bt" style="color: white;font-size: 13px;font-weight: 500">登录</div>
+                    <div style="font-size: 12px">□阅读并同意民宿<span style="color: dodgerblue">服务协议</span>和<span style="color: dodgerblue">个人信息保护政策</span></div>
+                </div>
+                <div class="main-bottom">
+                    <span style="margin-left: 22px;font-size: 13px;color: #409eff">忘记密码</span>
+                    <span style="margin-right: 22px;font-size: 13px;color: #409eff">免费注册</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    html,body {
+        height: 100%;
+    }
+    .container {
+        margin:  0 -20px;
+        height: 100%;
+        background-image: url("./img/minsu.jpeg");
+        //background-color: #06B75B;
+        background-size: cover;
+    }
+    .header {
+        width: 100%;
+        height: 75px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px;
+    }
+    .header-left-aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-right {
+        margin-right: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+    }
+    .body-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main {
+        margin-top: 55px;
+        margin-left: 400px;
+        height: 310px;
+        width: 310px;
+        background-color: white;
+        border-radius: 2px;
+    }
+    .main-header {
+        display: flex;
+        height: 90px;
+    }
+    .main-input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-log {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .login-bt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 27px;
+        width: 230px;
+        background-color: coral;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+    .main-bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+    .underline {
+        text-decoration: underline;
+        text-decoration-color: #409eff;
+        margin-top: 5px;
+    }
+
+
+</style>
+</html>

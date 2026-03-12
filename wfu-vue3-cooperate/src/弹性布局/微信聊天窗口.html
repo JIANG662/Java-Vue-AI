@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>微信聊天窗口</title>
+</head>
+<body>
+    <div class="container">
+        <div class="chat-out">
+            <div class="header">
+                <div>易途&潍院22级计科1班实训（39）</div>
+                <div>
+                    <img src="./img/11.png" >
+                </div>
+            </div>
+            <div class="main">
+
+            </div>
+            <div class="bottom">
+                <div class="bottom-header">
+                    <img style="width: 210px" src="./img/2.png" >
+                    <img style="width: 80px" src="./img/22.png" >
+                </div>
+                <div>
+                    <input type="请输入内容">
+                </div>
+                <div class="bottom-send">
+                    <div class="bt-out">
+                        <div>
+                            发送（S）
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    html,body {
+        height: 100%;
+
+    }
+    .container {
+        height: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .chat-out{
+        display:flex:
+        flex-direction: column;
+        width: 540px;
+        <!--基于浏览器窗口的百分比-->
+        height: 90vh;
+
+        border: 1px solid #c8c6c6;
+        border-radius: 10px;
+        box-shadow: 0px 0px 18px #b0b0b0;
+        background-color:#EDEDED
+    }
+    .header {
+        height: 76px;
+        border-bottom: 1px solid #D5D5D5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px 0 15px;
+    }
+    .bottom {
+        height: 150px;
+        border-top: 1px solid #D5D5D5;
+
+    }
+    .main {
+        flex: 1;
+    }
+    .bottom-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    input{
+        width: 95%;
+        height: 45px;
+        border: none;
+        outline: none;
+        background-color: #EDEDED;
+        margin-left: 10px;
+    }
+    .bt-out{
+        width: 96px;
+        height: 32px;
+        background-color: #06B75B;
+        border-radius: 5px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .bottom-send{
+        display:flex;
+        justify-content: flex-end;
+    }
+</style>
+</html>

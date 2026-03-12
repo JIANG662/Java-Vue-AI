@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex布局</title>
+</head>
+<body>
+    <!--
+     块元素 （宽度自动填充所占父元素的100%）
+     行内元素 （宽度自适应根据内容的大小来制定（盒子模型的宽和高不起作用））
+     -->
+   <h3>1.flex-direction排列方向属性</h3>
+   <div class="box">
+       <div>1</div>
+       <div>2</div>
+       <div>3</div>
+   </div>
+    <h3>2.flex-wrap换行属性</h3>
+    <div class="box2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+
+    </div>
+
+    <h3>3.justify-content主轴对齐方式属性</h3>
+    <div class="box3">
+        <div>1</div>
+        <div>2</div>
+    </div>
+
+    <h3>4.align-item交叉轴对齐方式属性</h3>
+    <div class="box4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h2>项目属性</h2>
+    <h3>5.order排序属性</h3>
+    <div class="box5">
+        <div style="align-self: center">1</div>
+        <div style="order: -1">2</div>
+        <div>3</div>
+    </div>
+
+    <h3>6.flex:1自动填充属性(设置为flex:1的项目会自动计算容器剩余的空间大小然后填充)</h3>
+    <div class="box6">
+        <div >1</div>
+        <div style="flex: 1">2</div>
+        <div>3</div>
+    </div>
+</body>
+
+<!-- 页面样式（化妆） -->
+<style>
+    /* 将页面的父元素高度设置为100% */
+    html,body{
+        height: 100%;
+    }
+    .box{
+        /*height: 100%;*/
+        /* 注释快捷键 ctrl + shift + ? */
+        /* 开启弹性布局  */
+        display: flex;
+        /*
+            排列方向 row默认值（主轴水平 从左往右）
+            column 主轴垂直方向 从上往下排列
+        */
+        flex-direction: column-reverse;
+    }
+    /* 子代选择器 */
+    .box div{
+        width: 100px;
+        height: 50px;
+        background-color: orange;
+        /* 外边距 */
+        margin: 10px;
+    }
+
+    .box2{
+        /* 开启弹性布局  */
+        display: flex;
+        /* 添加背景色以及容器大小 */
+        background-color: pink;
+        height: 200px;
+        /* flex-wrap 换行属性 默认值nowrap（不换行） */
+        flex-wrap: wrap;
+    }
+    /* 子代选择器 */
+    .box2 div{
+        width: 30%;
+        height: 50px;
+        background-color: orange;
+        /* 外边距 */
+        margin: 10px;
+    }
+
+    .box3{
+        /* 开启弹性布局  */
+        display: flex;
+        /* justify-content 主轴对齐方式 */
+        justify-content: space-between;
+        background-color: greenyellow;
+        height: 200px;
+        /* 内边距 */
+        padding: 0 20px;
+        flex-direction: column;
+    }
+    /* 子代选择器 */
+    .box3 div{
+        width: 100px;
+        height: 50px;
+        background-color: orange;
+        /* 外边距 */
+        margin:10px 0;
+
+    }
+
+    .box4{
+        /* 开启弹性布局  */
+        display: flex;
+        height: 300px;
+        background-color: pink;
+        align-items: flex-end;
+
+    }
+    /* 子代选择器 */
+    .box4 div{
+        width: 100px;
+        /* auto表示自适应高度  */
+        height: 50px;
+        background-color: orange;
+        /* 外边距 */
+        margin:10px;
+
+    }
+    .box5{
+        /* 开启弹性布局  */
+        display: flex;
+        height: 200px;
+        background-color: pink;
+
+
+    }
+    /* 子代选择器 */
+    .box5 div{
+        width: 100px;
+        /* auto表示自适应高度  */
+        height: 50px;
+        background-color: orange;
+        /* 外边距 */
+        margin:10px;
+
+    }
+
+    .box6{
+        /* 开启弹性布局  */
+        display: flex;
+        height: 200px;
+        background-color: pink;
+
+
+    }
+    /* 子代选择器 */
+    .box6 div{
+        width: 100px;
+        /* auto表示自适应高度  */
+        height: auto;
+        background-color: orange;
+        /* 外边距 */
+        margin:10px;
+
+    }
+</style>
+</html>

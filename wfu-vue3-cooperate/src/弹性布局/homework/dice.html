@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dice-practice</title>
+</head>
+<body>
+    <div class="container">
+        <div class="dice d1">
+            <div class="dot center"></div>
+        </div>
+        <div class="dice d2">
+            <div class="dot top-left"></div>
+            <div class="dot bottom-right"></div>
+        </div>
+        <div class="dice d3">
+            <div class="dot top-left"></div>
+            <div class="dot center"></div>
+            <div class="dot bottom-right"></div>
+        </div>
+        <div class="dice d4">
+            <div class="g1">
+                <div class="dot "></div>
+                <div class="dot "></div>
+            </div>
+            <div class="g2">
+                <div class="dot "></div>
+                <div class="dot "></div>
+            </div>
+        </div>
+        <div class="dice d5">
+            <div class="g1">
+                <div class="dot "></div>
+                <div class="dot "></div>
+            </div>
+            <div class="dot center"></div>
+            <div class="g2">
+                <div class="dot "></div>
+                <div class="dot "></div>
+            </div>
+        </div>
+        <div class="dice d6">
+            <div class="g3">
+                <div class="dot "></div>
+                <div class="dot "></div>
+                <div class="dot "></div>
+            </div>
+            <div class="g3">
+                <div class="dot "></div>
+                <div class="dot "></div>
+                <div class="dot "></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<style>
+    html,body {
+            height: 100%;
+             margin: 0;
+        }
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        min-height: 100%;
+        background-color: black;
+         /* 窗口过窄时允许横向滚动 */
+        overflow-x: auto;
+        padding: 10px; /* 添加内边距避免滚动条紧贴边缘 */
+    }
+    .dice {
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        width: 100px;
+        border-radius: 8px;
+        background-color: white;
+        flex-shrink: 0;
+        padding: 10px;
+        margin: 10px;
+    }
+    .dot {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: black;
+    }
+    .d1  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .center {
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+    .d2  {
+        display: flex;
+        justify-content: space-between;
+    }
+    .d3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .g1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .g2{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .bottom-right {
+        align-self: flex-end;
+    }
+    .g3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+</style>
+</html>
